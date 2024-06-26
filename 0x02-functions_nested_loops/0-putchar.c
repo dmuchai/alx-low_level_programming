@@ -1,8 +1,3 @@
-/*
- * File: 0-putchar.c
- * Auth: Dennis M. Muchai
- */
-
 #include "main.h"
 
 /**
