@@ -58,18 +58,6 @@ void printf_string(va_list list)
 }
 
 /**
- * struct funckey - struct to map format specifiers to print functions
- *
- * @f: function pointer to print function
- * @spec: format specifier
- */
-typedef struct funckey
-{
-	void (*f)(va_list);
-	char spec;
-} funckey;
-
-/**
  * print_all - prints various types given a format string for the arguments
  *
  * @format: string containing type information for args

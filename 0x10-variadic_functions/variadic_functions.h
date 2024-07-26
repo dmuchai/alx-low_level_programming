@@ -6,4 +6,18 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
+int _putchar(char c);
+
+/**
+ * struct funckey - struct to map format specifiers to print functions
+ *
+ * @f: function pointer to print function
+ * @spec: format specifier
+ */
+typedef struct funckey
+{
+	void (*f)(va_list);
+	char spec;
+} funckey;
+
 #endif
