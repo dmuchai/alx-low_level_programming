@@ -3,13 +3,16 @@
 
 /**
  * free_dlistint - Frees a doubly linked list.
- * @head: Head of the list.
+ * @head: head of the doubly linked list.
+ *
+ * Return: Nothing
  */
 void free_dlistint(dlistint_t *head)
 {
 	dlistint_t *temp_ptr;
 
-	while (head != NULL) {
+	while (head != NULL)
+	{
 		temp_ptr = head;
 		head = head->next;
 		free(temp_ptr);
