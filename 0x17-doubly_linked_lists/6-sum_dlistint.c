@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -8,7 +10,7 @@
  */
 int sum_dlistint(dlistint_t *head)
 {
-	int add = 0;
+	unsigned int add = 0;
 
 	while (head != NULL)
 	{
