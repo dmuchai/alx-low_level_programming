@@ -10,7 +10,7 @@
  */
 int sum_dlistint(dlistint_t *head)
 {
-	unsigned int add = 0;
+	int add = 0;
 
 	while (head != NULL)
 	{
